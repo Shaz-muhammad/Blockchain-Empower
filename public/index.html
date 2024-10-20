@@ -1,43 +1,482 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+!DOCTYPE html>
+<!-- Last Published: Mon May 15 2023 17:36:16 GMT+0000 (Coordinated Universal Time) -->
+<html data-wf-domain="www.empowerchain.io" data-wf-page=
+"6313299b553f41c671ec5a56" data-wf-site="6313299a553f4107e9ec5a4f">
+<head>
+  <meta charset="utf-8">
+  <title>EmpowerChain</title>
+  <meta content="A blockchain for the circular economy" name=
+  "description">
+  <meta content="EmpowerChain" property="og:title">
+  <meta content="A blockchain for the circular economy" property=
+  "og:description">
+  <meta content=
+  "https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/63170d420533da9857b637b7_social.png"
+  property="og:image">
+  <meta content="EmpowerChain" property="twitter:title">
+  <meta content="A blockchain for the circular economy" property=
+  "twitter:description">
+  <meta content=
+  "https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/63170d420533da9857b637b7_social.png"
+  property="twitter:image">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name=
+  "viewport">
+  <link href=
+  "https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/css/empowerchain.webflow.7d2120325.min.css"
+  rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect"
+  crossorigin="anonymous">
+  <script src=
+  "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+  type="text/javascript"></script>
+  <script type="text/javascript">
+  WebFont.load({  google: {    families: ["Inter:100,200,300,regular,500,600,700,800,900"]  }});
+  </script>
+  <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]-->
+  <script type="text/javascript">
+  !function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);
+  </script>
+  <link href=
+  "https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/6315fbe3bfb65a22aa8f7d48_Group%204%20Copy%202.png"
+  rel="shortcut icon" type="image/x-icon">
+  <link href=
+  "https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/6315fc49191886a53d742f99_Group%204%20Copy%202%20(1).png"
+  rel="apple-touch-icon">
+  <script type="text/javascript">
+  window.__WEBFLOW_CURRENCY_SETTINGS = {"currencyCode":"USD","symbol":"$","decimal":".","fractionDigits":2,"group":",","template":"{{wf {\"path\":\"symbol\",\"type\":\"PlainText\"} }} {{wf {\"path\":\"amount\",\"type\":\"CommercePrice\"} }} {{wf {\"path\":\"currencyCode\",\"type\":\"PlainText\"} }}","hideDecimalForWholeNumbers":false};
+  </script>
+</head>
+<body>
+  <div data-collapse="medium" data-animation="default"
+  data-duration="400" data-easing="ease" data-easing2="ease" role=
+  "banner" class="navbar w-nav">
+    <div class="w-layout-grid grid-navbar">
+      <div data-w-id="e8cea9b6-4627-f1cd-fec0-16ebfaf55914" class=
+      "nav">
+        <a href="/" aria-current="page" class=
+        "brand w-nav-brand w--current"><img src=
+        "https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/6313424c3c13ed46c6d5f429_white2.png"
+        loading="lazy" alt="" sizes=
+        "(max-width: 479px) 100vw, 300px" srcset=
+        "https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/6313424c3c13ed46c6d5f429_white2-p-500.png 500w, https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/6313424c3c13ed46c6d5f429_white2-p-800.png 800w, https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/6313424c3c13ed46c6d5f429_white2-p-1080.png 1080w, https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/6313424c3c13ed46c6d5f429_white2-p-1600.png 1600w, https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/6313424c3c13ed46c6d5f429_white2-p-2000.png 2000w"
+        class="logo"></a>
+      </div>
+      <div data-w-id="e8cea9b6-4627-f1cd-fec0-16ebfaf55917" class=
+      "nav">
+        <nav role="navigation" class="nav-menu w-nav-menu">
+          <a href="/" aria-current="page" class=
+          "nav-link w-nav-link w--current">Home</a><a href=
+          "https://docs.empowerchain.io" target="_blank" class=
+          "nav-link w-nav-link">Docs</a><a href="/testnet" class=
+          "nav-link w-nav-link">Testnet</a><a href="/validator"
+          class="nav-link w-nav-link">Validator</a><a href="/nfts"
+          class="nav-link w-nav-link">NFTs</a><a href=
+          "https://medium.com/empowerplastic/empowerchain/home"
+          class="nav-link w-nav-link">Blog</a><a href="/contact"
+          class="nav-link w-nav-link">Contact</a>
+        </nav>
+      </div>
+      <div class="nav right">
+        <div data-w-id="7bcd5200-d2dd-bf4a-4f04-fed3f984593b"
+        class="w-layout-grid grid-button-nav-2">
+          <div class="menu-button-2 w-nav-button">
+            <div class="menu-icon w-icon-nav-menu"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shadow-navbar"></div>
+  </div>
+  <div class="section-hero wf-section">
+    <div class="content hero">
+      <div class="block-hero">
+        <h1 data-w-id="fec0fb7b-303f-09d0-3ce6-40f91d7252a5" style=
+        "-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+        class="heading-hero">A blockchain for the Circular
+        Economy</h1>
+        <p data-w-id="dcd739db-6d1f-6a52-859b-4a3fd0e20c84" style=
+        "-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+        class="paragraph-large">Decentralizing the new (circular)
+        economy so everyone<br>
+        can get a fair share of the upside of<br>
+        making the world a cleaner and better place.<br>
+        <br>
+        <br>
+        Built on the Cosmos SDK&nbsp;and connecting to an
+        IBC-enabled ecosystem near you soon.</p>
+      </div>
+      <div data-w-id="297673ad-47a4-b4b1-8938-0ca16b3d6b41" class=
+      "figure-a-hero">
+        <div class="figure-block-a-hero">
+          <div style="width:0%" class="figure-a1"></div>
+          <div style="width:0%" class="figure-a2"></div>
+          <div style="width:0%" class="figure-a3"></div>
+        </div>
+      </div>
+    </div>
+    <div data-w-id="58e11b86-9d96-c9a8-f52f-b1795c37fa57" style=
+    "-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+    class="glow-top"></div>
+  </div>
+  <div class="section wf-section">
+    <div class="content">
+      <div class="block-heading">
+      <div data-w-id="1759a32d-2687-da2e-788f-4942a9518799" style=
+      "-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+      class="subtitle">
+        Meet
+      </div>
+      <h2 data-w-id="1759a32d-2687-da2e-788f-4942a951879b" style=
+      "-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+      class="heading">EmpowerChain</h2>
+      <p data-w-id="1759a32d-2687-da2e-788f-4942a951879d" style=
+      "-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+      class="paragraph-large">Digital infrastructure for a circular
+      economy.</p><img src=
+      "https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/631365f100d7d6260547ac8f_g9082.png"
+      loading="lazy" sizes=
+      "(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 92vw"
+      srcset=
+      "https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/631365f100d7d6260547ac8f_g9082-p-500.png 500w, https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/631365f100d7d6260547ac8f_g9082-p-800.png 800w, https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/631365f100d7d6260547ac8f_g9082-p-1080.png 1080w, https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/631365f100d7d6260547ac8f_g9082-p-1600.png 1600w, https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/631365f100d7d6260547ac8f_g9082.png 1645w"
+      alt=""></div>
+    </div>
+  </div>
+  <div class="section wf-section">
+    <div data-w-id="3930e259-75dd-d066-e614-6fbbe9bf2ee5" style=
+    "-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+    class="subtitle">
+      1: The PROBLEM
+    </div>
+    <h2 data-w-id="3930e259-75dd-d066-e614-6fbbe9bf2ee7" style=
+    "-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+    class="heading">Plastic waste is everywhere</h2>
+    <div class="content">
+      <div class="w-layout-grid grid-4">
+        <img src=
+        "https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/63133d5aad9f791e0202eeec_image04.jpg"
+        loading="lazy" width="618" id=
+        "w-node-_42f16945-983b-bd9f-dc74-16422b8993fe-71ec5a56"
+        srcset=
+        "https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/63133d5aad9f791e0202eeec_image04-p-500.jpg 500w, https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/63133d5aad9f791e0202eeec_image04-p-800.jpg 800w, https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/63133d5aad9f791e0202eeec_image04-p-1080.jpg 1080w, https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/63133d5aad9f791e0202eeec_image04-p-1600.jpg 1600w, https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/63133d5aad9f791e0202eeec_image04-p-2000.jpg 2000w, https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/63133d5aad9f791e0202eeec_image04.jpg 2560w"
+        sizes=
+        "(max-width: 479px) 100vw, (max-width: 767px) 88vw, 618px"
+        alt="" class="image">
+        <div id=
+        "w-node-a129d87f-8bf0-9780-e103-689b6ef85bc1-71ec5a56"
+        class="w-layout-grid grid-5">
+          <div data-w-id="222fa6cf-ea58-2176-5d4f-e7394069fe4a"
+          style=
+          "-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+          class="stats lighter">
+            <h4 class="heading-stats">448M</h4>
+            <div class="text-stats">
+              tons of plastic produced in 2015
+            </div>
+          </div>
+          <div data-w-id="899a940a-f0a5-2ecd-6e36-1fcbdeff959c"
+          style=
+          "-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+          class="stats lighter">
+            <h4 class="heading-stats">200X</h4>
+            <div class="text-stats">
+              more plastic usage than in 1950
+            </div>
+          </div>
+          <div data-w-id="89a0fdd1-1348-be9e-c862-3c60fdd05457"
+          style=
+          "-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+          class="stats lighter">
+            <h4 class="heading-stats">15</h4>
+            <div class="text-stats">
+              tons of plastic waste dumped in the ocean
+              <strong>every minute</strong>
+            </div>
+          </div>
+          <div data-w-id="f801f0ca-b7ce-1b6b-60c5-6ac448d5c729"
+          style=
+          "-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+          class="stats lighter">
+            <h4 class="heading-stats">Forever</h4>
+            <div class="text-stats">
+              is how long it takes for plastic to decompose
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section wf-section">
+    <div class="content">
+      <div class="block-heading">
+        <div data-w-id="64b265bd-7ce5-aa30-d012-e7222cc9d19c"
+        style="-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+        class="subtitle">
+          2:&nbsp;The Solution
+        </div>
+        <h2 data-w-id="64b265bd-7ce5-aa30-d012-e7222cc9d19e" style=
+        "-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+        class="heading">Circular Economy</h2>
+        <p data-w-id="64b265bd-7ce5-aa30-d012-e7222cc9d1a0" style=
+        "-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+        class="paragraph-large">The digital infrastructure for the
+        circular economy requires tools for all parts of the supply
+        chain. Connecting all the parties to collaborate unlocks
+        the solution.<br></p>
+      </div>
+      <div class="w-layout-grid grid-2">
+      <div id=
+      "w-node-_103a9dc2-f7e9-865d-8de5-380eaf2c748a-71ec5a56"
+      class="w-layout-grid grid-6">
+        <div data-w-id="093b0bfa-6f2d-53ec-0111-b501b61a42d1"
+        style="-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+        class="stats lighter empowergreen">
+          <h3 class="heading-stats">3 things</h3>
+          <div class="text-stats">
+            <strong>we need to do</strong>
+          </div>
+        </div>
+        <div data-w-id="d565b08a-0a44-30fa-7937-245c998d798c"
+        style="-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+        class="stats lighter">
+          <h5 class="heading-stats">Close the tap</h5>
+          <div class="text-stats">
+            #1
+          </div>
+        </div>
+        <div data-w-id="bf1df36f-deb6-633d-fc36-6d159c08b28a"
+        style="-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+        class="stats lighter">
+          <h5 class="heading-stats">Clean up the waste</h5>
+          <div class="text-stats">
+            #2
+          </div>
+        </div>
+        <div data-w-id="506e7a91-43e2-7c50-9793-b4e381b1acb6"
+        style="-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+        class="stats lighter">
+          <h5 class="heading-stats">Provide recycling aid</h5>
+          <div class="text-stats">
+            #3
+          </div>
+        </div>
+      </div><img src=
+      "https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/6315f6c6bfb65a59138f2f7f_Screenshot%20from%202022-09-05%2015-16-46.png"
+      loading="lazy" width="804" id=
+      "w-node-b152c0b1-ca4d-447d-77b0-03e3f93f4270-71ec5a56"
+      srcset="https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/6315f6c6bfb65a59138f2f7f_Screenshot%20from%202022-09-05%2015-16-46-p-500.png 500w, https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/6315f6c6bfb65a59138f2f7f_Screenshot%20from%202022-09-05%2015-16-46-p-800.png 800w, https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/6315f6c6bfb65a59138f2f7f_Screenshot%20from%202022-09-05%2015-16-46-p-1080.png 1080w, https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/6315f6c6bfb65a59138f2f7f_Screenshot%20from%202022-09-05%2015-16-46.png 1325w"
+      sizes=
+      "(max-width: 479px) 100vw, (max-width: 991px) 92vw, 804px"
+      alt="" class="image"></div>
+    </div>
+  </div>
+  <div class="section wf-section">
+  <div class="content">
+    <div class="block-heading">
+      <div data-w-id="823c362f-ea60-5ffd-ca7f-cde6a03d15bb" style=
+      "-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+      class="subtitle">
+        3:&nbsp;The InfraStructrure
+      </div>
+      <h2 data-w-id="edc71457-7d5b-7bea-ff46-ddb5540db920" style=
+      "-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+      class="heading">EmpowerChain</h2>
+      <p data-w-id="bd07e6be-52ea-8999-f41e-f7d78c27586b" style=
+      "-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+      class="paragraph-large">The digital infrastructure for the
+      circular economy<br></p>
+    </div>
+    <div class="w-layout-grid grid-features">
+      <div data-w-id="893553c5-8fd4-cfbf-8679-88871d8ec8a6" style=
+      "-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+      class="feature">
+        <div class="icon-feature-bg"><img src=
+        "https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/6313388ac76a2a716ae16e2b_map-pin.svg"
+        loading="lazy" alt="" class="icon-feature"></div>
+        <h6>Tracking</h6>
+        <p>To be able to tell where the materials end up and share
+        data in the<br>
+        supply chain</p>
+      </div>
+      <div data-w-id="86649301-b3bf-a470-084f-c832dcc04618" style=
+      "-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+      class="feature">
+        <div class="icon-feature-bg"><img src=
+        "https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/631338f6c25bf6c0bcbc8fbf_trash-2.svg"
+        loading="lazy" alt="" class="icon-feature"></div>
+        <h6>Deposit Schemes</h6>
+        <p>Get rewarded for bringing back plastic materials to
+        collection points anywhere in the world</p>
+      </div>
+      <div data-w-id="82c90e76-3d3e-e0a8-5192-1d91c07d6533" style=
+      "-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+      class="feature">
+        <div class="icon-feature-bg"><img src=
+        "https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/63133974e326d7f1c0ffd559_check-circle.svg"
+        loading="lazy" alt="" class="icon-feature"></div>
+        <h6>Plastic Credits</h6>
+        <p>Support clean-ups around the world by purchasing their
+        plastic credits - a real proof of work (and impact!)</p>
+      </div>
+    </div>
+  </div><img src=
+  "https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/6315f8ddc9476c45281c6afd_g1517%201.png"
+  loading="lazy" width="506" sizes=
+  "(max-width: 479px) 100vw, (max-width: 767px) 88vw, 506px"
+  srcset="https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/6315f8ddc9476c45281c6afd_g1517%201-p-500.png 500w, https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/6315f8ddc9476c45281c6afd_g1517%201-p-800.png 800w, https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/6315f8ddc9476c45281c6afd_g1517%201.png 1027w"
+  alt=""></div>
+  <div class="section wf-section">
+    <div class="content">
+      <div class="w-layout-grid grid-3">
+        <div class="block-left">
+          <div class="w-layout-grid grid-stats">
+            <div id=
+            "w-node-_02064035-005b-20d3-cc19-3656bd8b82a4-71ec5a56"
+            data-w-id="02064035-005b-20d3-cc19-3656bd8b82a4" style=
+            "-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+            class="stats">
+              <h3 class="heading-stats">40+</h3>
+              <div class="text-stats">
+                Active Countries
+              </div>
+            </div>
+            <div id=
+            "w-node-_3f5f32dc-ddaa-e7e4-9106-c1de7dc4ad14-71ec5a56"
+            data-w-id="3f5f32dc-ddaa-e7e4-9106-c1de7dc4ad14" style=
+            "-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+            class="stats">
+              <h3 class="heading-stats">200M+</h3>
+              <div class="text-stats">
+                KG's on the platform
+              </div>
+            </div>
+            <div id=
+            "w-node-_938ee921-41a5-f1d9-5d7e-3338bf9379cb-71ec5a56"
+            data-w-id="938ee921-41a5-f1d9-5d7e-3338bf9379cb" style=
+            "-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+            class="stats lighter">
+              <h3 class="heading-stats">20M+</h3>
+              <div class="text-stats">
+                People reached
+              </div>
+            </div>
+            <div id=
+            "w-node-f198c28a-f776-8799-306f-bca23b2e4ab7-71ec5a56"
+            data-w-id="f198c28a-f776-8799-306f-bca23b2e4ab7" style=
+            "-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+            class="stats lighter">
+              <h3 class="heading-stats">600+</h3>
+              <div class="text-stats">
+                Organizations
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id=
+        "w-node-_5713fedf-471c-a9c3-90d4-7d6642ea17a8-71ec5a56"
+        class="block">
+          <div data-w-id="5713fedf-471c-a9c3-90d4-7d6642ea17a9"
+          style=
+          "-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+          class="subtitle">
+            Why us?
+          </div>
+          <h2 data-w-id="5713fedf-471c-a9c3-90d4-7d6642ea17ab"
+          style=
+          "-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+          class="heading">A project that has been live for 5
+          years</h2>
+          <p data-w-id="5713fedf-471c-a9c3-90d4-7d6642ea17ad"
+          style="-webkit-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+          class="paragraph-large">Our Web 2.0 Platform has been
+          live for more than 5 years and has tracked hundreds of
+          millions of kg of plastic waste already. It has involved
+          thousands of workers in marginalized communities.<br>
+          ‍<br>
+          <strong>It's time to grow exponentially. It's time to
+          take it on-chain.</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section footer wf-section">
+    <div class="content">
+      <div class="w-layout-grid grid-footer">
+        <div id=
+        "w-node-_6603d099-87ea-d392-449a-caaf2cdb7f91-2cdb7f8e"
+        data-w-id="6603d099-87ea-d392-449a-caaf2cdb7f91" class=
+        "block-footer">
+          <img src=
+          "https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/6313424c3c13ed46c6d5f429_white2.png"
+          loading="lazy" sizes="(max-width: 479px) 100vw, 300px"
+          srcset=
+          "https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/6313424c3c13ed46c6d5f429_white2-p-500.png 500w, https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/6313424c3c13ed46c6d5f429_white2-p-800.png 800w, https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/6313424c3c13ed46c6d5f429_white2-p-1080.png 1080w, https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/6313424c3c13ed46c6d5f429_white2-p-1600.png 1600w, https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/6313424c3c13ed46c6d5f429_white2-p-2000.png 2000w"
+          alt="" class="logo-footer">
+          <p class="paragraph-footer">Decentralizing the new
+          (circular) economy so everyone can get a fair share of
+          the upside of making the world a cleaner and better
+          place.<br>
+          <br>
+          <a href="mailto:hi@empowerchain.io" class=
+          "link-underlined">hi@empowerchain.io</a></p>
+        </div>
+        <div data-w-id="6603d099-87ea-d392-449a-caaf2cdb7f99"
+        class="block-footer">
+          <div class="heading-footer">
+            Quick Links
+          </div><a href="https://docs.empowerchain.io" target=
+          "_blank" class="link-footer">Docs</a><a href="/testnet"
+          class="link-footer">Testnet</a><a href="/validator"
+          class="link-footer">Validator<br></a><a href=
+          "https://medium.com/empowerplastic/empowerchain/home"
+          class="link-footer">Blog</a><a href="/contact" class=
+          "link-footer">Contact</a>
+        </div>
+        <div data-w-id="6603d099-87ea-d392-449a-caaf2cdb7fa5"
+        class="block-footer">
+          <div class="heading-footer">
+            Social
+          </div><a href="https://twitter.com/empowerchain_io"
+          target="_blank" class="link-footer">Twitter</a><a href=
+          "https://discord.gg/UTxEzFzHVX" target="_blank" class=
+          "link-footer">Discord<br></a><a href=
+          "https://t.me/empowerchain" target="_blank" class=
+          "link-footer">Telegram</a>
+        </div>
+        <div data-w-id="6603d099-87ea-d392-449a-caaf2cdb7fb1"
+        class="block-footer">
+          <div class="heading-footer">
+            Company
+          </div><a href="https://empowerchain.io" target="_blank"
+          class="link-footer">Empower.eco</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src=
+  "https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6313299a553f4107e9ec5a4f"
+  type="text/javascript" integrity=
+  "sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+  <script src=
+  "https://uploads-ssl.webflow.com/6313299a553f4107e9ec5a4f/js/webflow.c04449309.js"
+  type="text/javascript"></script> 
+  <script type="text/javascript">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+   var _scq = _scq || [];
+   var _scs = _scs || {};
+   _scs.teamId = "ecQztU2Po8obYIQmKo0DFH";
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+   (function() {
+     var dc = document.createElement('script');
+     dc.type = 'text/javascript';
+     dc.async = true;
+     dc.src = '//cdn.sendx.io/prod/ecQztU2Po8obYIQmKo0DFH.js';
+     var s = document.getElementsByTagName('script')[0];
+     s.parentNode.insertBefore(dc, s);
+   })();
+  </script>
+</body>
 </html>
